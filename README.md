@@ -1,6 +1,6 @@
 # Hardhat Testing Demo
 
-This project demonstrates writing Hardhat unit tests for basic smart contract in Solidity.
+This project demonstrates writing Hardhat unit tests for a basic smart contract in Solidity.
 
 ## Project Setup
 
