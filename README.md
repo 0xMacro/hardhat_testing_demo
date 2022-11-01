@@ -1,13 +1,37 @@
-# Sample Hardhat Project
+# Hardhat Testing Demo
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates writing Hardhat unit tests for basic smart contract in Solidity.
 
-Try running some of the following tasks:
+## Project Setup
 
-```shell
-npx hardhat help
+[Install](https://github.com/nvm-sh/nvm#install--update-script) `nvm` if you don't have it already:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+```
+
+Install and switch to `node` version specified in `.nvmrc` file:
+
+```bash
+nvm install
+```
+
+Install all needed dependencies:
+
+```bash
+npm install
+```
+
+## Running the tests
+
+Run the following to have the tests run once:
+
+```bash
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```
+
+Run the following to have the tests in "watch" mode, where any changes to the contracts and test files will trigger compilation of the contracts (if necessary) and another run of the tests:
+
+```bash
+npm run test
 ```
